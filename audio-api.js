@@ -7,6 +7,7 @@ var attack = 0.1;
 var release = 0.1;
 var gains = [];
 var oscillators = [];
+var hardcoded_frequencies = [523.25, 554.37,  587.33, 622.25,  659.25,  698.46,  739.99,  783.99,  830.61,  880.00,  932.33,  987.77]
 
 function noteOn(freq) {
   var o = c.createOscillator();
@@ -32,15 +33,21 @@ function noteOff(freq) {
 exercise_keys = "awsedftgyhujk";
 
 function noteToFreq(note) {
-  return 440*Math.pow(2,note/12)
+  let computed_frequency = 440*Math.pow(2,note/12)
+  return computed_frequency
 }
+
 
 document.body.onkeydown = function (e) {
   if (!e.repeat) {
-    noteOn(noteToFreq(exercise_keys.indexOf(e.key)))
+    let index_of_note = exercise_keys.indexOf(e.key)
+    let referenced_frequency =  hardcoded_frequencies[index_of_note]
+    noteOn(referenced_frequency)
   }
 }
 
 document.body.onkeyup = function(e) {
-  noteOff(noteToFreq(exercise_keys.indexOf(e.key)))
+  let index_of_note = exercise_keys.indexOf(e.key)
+  let referenced_frequency =  hardcoded_frequencies[index_of_note]
+  noteOff(referenced_frequency)
 }
