@@ -55,7 +55,7 @@ p{
 
 .white{
   --width: 100px;
-  background-color: #FFF;
+  background-color: #FF7FF6;
   border-right: 4px solid #555;
 }
 
@@ -70,7 +70,7 @@ p{
 .black{
   --width: 60px;
   margin: 0 calc(var(--width) / -2);
-  background-color: #000;
+  background-color: #2e1140;
   z-index: 1;
 }
 
