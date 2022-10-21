@@ -26,7 +26,9 @@ function noteOff(freq) {
     g.gain.exponentialRampToValueAtTime(0.1, c.currentTime + release);
     //o.stop(c.currentTime + release);
 }
-keys = "awsedftgyhujk";
+
+const keys = "awsedftgyhujk";
+
 function noteToFreq(note) {return 440*Math.pow(2,note/12)}
 
 document.body.onkeydown = function (e) {if (!e.repeat) noteOn(noteToFreq(keys.indexOf(e.key)))}

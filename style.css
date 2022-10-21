@@ -70,7 +70,7 @@ p{
 .black{
   --width: 60px;
   margin: 0 calc(var(--width) / -2);
-  background-color: #2a0a3d;
+  background-color: #3f25c9;
   z-index: 1;
 }
 
