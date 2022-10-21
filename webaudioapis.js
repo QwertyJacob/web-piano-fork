@@ -1,10 +1,10 @@
-var c = new AudioContext();
-var comp = c.createDynamicsCompressor();
-var attack = 0.1;
-var release = 0.1;
-var gains = [];
-var oscillators = [];
-keys = "awsedftgyhujk";
+let c = new AudioContext();
+let comp = c.createDynamicsCompressor();
+let attack = 0.1;
+let release = 0.1;
+let gains = [];
+let oscillators = [];
+let keys = "awsedftgyhujk";
 
 
 comp.connect(c.destination);
@@ -12,8 +12,8 @@ comp.connect(c.destination);
 
 
 function noteOn(freq) {
-    var o = c.createOscillator();
-    var g = c.createGain();
+    let o = c.createOscillator();
+    let g = c.createGain();
     gains[freq] = g;
     oscillators[freq] = o;
     o.connect(g);
@@ -28,8 +28,8 @@ function noteOn(freq) {
 * This function is going to turn off the sound
 * */
 function noteOff(freq) {
-    var g = gains[freq]
-    var o = oscillators[freq];
+    let g = gains[freq]
+    let o = oscillators[freq];
     g.gain.exponentialRampToValueAtTime(0.1, c.currentTime + release);
     o.stop(c.currentTime + release);
 }
