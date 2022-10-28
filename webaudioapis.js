@@ -5,11 +5,22 @@ let release = 0.1;
 let gains = [];
 let oscillators = [];
 let hardcoded_frequencies = [523.25, 554.37,  587.33, 622.25,  659.25,  698.46,  739.99,  783.99,  830.61,  880.00,  932.33,  987.77, 1046.50, 1108.73, 1174.66, 1244.51, 1318.51, 1396.91, 1479.98, 1567.98, 1661.22, 1760.00, 1864.66, 1975.53, 2093.00 ]
+let key_labels = ['C1', 'Db1', 'D1', 'Eb1', 'E1', 'F1', 'Gb1', 'G1', 'Ab1', 'A1', 'Bb1', 'B1', 'C2', 'Db2', 'D2', 'Eb2', 'E2', 'F2', 'Gb2', 'G2', 'Ab2', 'A2', 'Bb2', 'B2']
 let exercise_keys = "awsedftgyhujk";
 
 
 comp.connect(c.destination);
 
+let current_canvas;
+let current_key_context;
+let current_id;
+for (let i = 0; i < hardcoded_frequencies.length; i++) {
+    current_id = key_labels[i]+'_label'
+    current_canvas = document.getElementById(current_id)
+    current_key_context = current_canvas.getContext("2d");
+    current_key_context.font = "30px Arial";
+    current_key_context.strokeText(key_labels[i],10,50)
+}
 
 
 function noteOnOffMouse(freq) {
