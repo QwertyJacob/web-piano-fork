@@ -14,7 +14,18 @@
 <body>
   <h1> My first Piano</h1>
   <div class="piano">
-    <div onclick="noteOnOffMouse(hardcoded_frequencies[0])" class="key white"></div>
+
+    <div onclick="noteOnOffMouse(hardcoded_frequencies[0])" class="key white">
+      <canvas id="myCanvas" width="50" height="50">
+      </canvas>
+      <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("C", 10, 50);
+      </script>
+    </div>
+
     <div onclick="noteOnOffMouse(hardcoded_frequencies[1])" class="key black"></div>
     <div onclick="noteOnOffMouse(hardcoded_frequencies[2])" class="key white"></div>
     <div onclick="noteOnOffMouse(hardcoded_frequencies[3])" class="key black"></div>
