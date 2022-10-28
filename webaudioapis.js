@@ -1,6 +1,6 @@
 let c = new AudioContext();
 let comp = c.createDynamicsCompressor();
-let attack = 0.1;
+let attack = 0;
 let release = 0.1;
 let gains = [];
 let oscillators = [];
