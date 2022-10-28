@@ -78,6 +78,92 @@ p{
   background-color: #222;
 }
 
+ #myCanvas {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas2 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas3 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas4 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas5 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas6 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvas7 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvasB1 {
+  color: white;
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvasB2 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvasB3 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvasB4 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#myCanvasB5 {
+  position: relative;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 @media only screen and (max-width: 768px){
   h1{
     margin: 0 0 3rem 0;
