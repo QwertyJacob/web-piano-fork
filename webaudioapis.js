@@ -29,8 +29,8 @@ function noteOnOffMouse(freq) {
     o.stop(c.currentTime + release);
 }
 function noteOn(freq) {
-    let o = c.createOscillator();
-    let g = c.createGain();
+    var o = c.createOscillator();
+    var g = c.createGain();
     gains[freq] = g;
     oscillators[freq] = o;
     o.connect(g);
@@ -46,8 +46,8 @@ function noteOn(freq) {
 * This function is going to turn off the sound
 * */
 function noteOff(freq) {
-    let g = gains[freq]
-    let o = oscillators[freq];
+    var g = gains[freq]
+    var o = oscillators[freq];
     g.gain.exponentialRampToValueAtTime(0.1, c.currentTime + release);
     o.stop(c.currentTime + release);
 }
