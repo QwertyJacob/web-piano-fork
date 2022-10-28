@@ -14,21 +14,21 @@
 <body>
   <h1> My second Piano!</h1>
   <div class="piano">
-    <div data-note="C" class="key white"></div>
-    <div data-note="Db" class="key black"></div>
-    <div data-note="D" class="key white"></div>
-    <div data-note="Eb" class="key black"></div>
-    <div data-note="E" class="key white"></div>
-    <div data-note="F" class="key white"></div>
-    <div data-note="Gb" class="key black"></div>
-    <div data-note="G" class="key white"></div>
-    <div data-note="Ab" class="key black"></div>
-    <div data-note="A" class="key white"></div>
-    <div data-note="Bb" class="key black"></div>
-    <div data-note="B" class="key white"></div>
+    <div onclick="noteOn(freqs[0])" class="key white"></div>
+    <div  onclick="noteOn(freqs[1])" class="key black"></div>
+    <div onclick="noteOn(freqs[2])" class="key white"></div>
+    <div onclick="noteOn(freqs[3])" class="key black"></div>
+    <div onclick="noteOn(freqs[4])" class="key white"></div>
+    <div onclick="noteOn(freqs[5])" class="key white"></div>
+    <div onclick="noteOn(freqs[6])" class="key black"></div>
+    <div onclick="noteOn(freqs[7])" class="key white"></div>
+    <div onclick="noteOn(freqs[8])" class="key black"></div>
+    <div onclick="noteOn(freqs[9])" class="key white"></div>
+    <div onclick="noteOn(freqs[10])" class="key black"></div>
+    <div onclick="noteOn(freqs[11])" class="key white"></div>
   </div>
-  <p>TIP: You can use the keys of your keyboard!</p>
+  <p>TIP: You cannot use the keys of your keyboard yet!</p>
   <footer>Copyright &copy; 2020-2021 The Noah</footer>
-  <script src="audio-api.js" defer></script>
+  <script src="webaudioapis.js" defer></script>
 </body>
 </html>
