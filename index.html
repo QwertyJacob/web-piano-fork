@@ -14,18 +14,102 @@
 <body>
   <h1> My first Piano</h1>
   <div class="piano">
-    <div data-note="C" class="key white">C</div>
-    <div data-note="Db" class="key black">Db</div>
-    <div data-note="D" class="key white">D</div>
-    <div data-note="Eb" class="key black">Eb</div>
-    <div data-note="E" class="key white">E</div>
-    <div data-note="F" class="key white">F</div>
-    <div data-note="Gb" class="key black">Gb</div>
-    <div data-note="G" class="key white">G</div>
-    <div data-note="Ab" class="key black">Ab</div>
-    <div data-note="A" class="key white">A</div>
-    <div data-note="Bb" class="key black">Bb</div>
-    <div data-note="B" class="key white">B</div>
+    <div data-note="C" class="key white"><canvas id="myCanvas" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("C", 10, 50);
+      </script></div>
+    <div data-note="Db" class="key black"><canvas id="myCanvasB1" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvasB1");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Db", 10, 50);
+      </script></div>
+    <div data-note="D" class="key white"><canvas id="myCanvas2" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas2");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("D", 10, 50);
+      </script></div>
+    <div data-note="Eb" class="key black"><canvas id="myCanvasB2" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvasB2");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Eb", 10, 50);
+      </script></div>
+    <div data-note="E" class="key white"><canvas id="myCanvas3" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas3");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("E", 10, 50);
+      </script></div>
+    <div data-note="F" class="key white"><canvas id="myCanvas4" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas4");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("F", 10, 50);
+      </script></div>
+    <div data-note="Gb" class="key black"><canvas id="myCanvasB3" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvasB3");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Gb", 10, 50);
+      </script></div>
+    <div data-note="G" class="key white"><canvas id="myCanvas5" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas5");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("G", 10, 50);
+      </script></div>
+    <div data-note="Ab" class="key black"><canvas id="myCanvasB4" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvasB4");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Ab", 10, 50);
+      </script></div>
+    <div data-note="A" class="key white"><canvas id="myCanvas6" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas6");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("A", 10, 50);
+      </script></div>
+    <div data-note="Bb" class="key black"><canvas id="myCanvasB5" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvasB5");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Bb", 10, 50);
+      </script></div>
+    <div data-note="B" class="key white"><canvas id="myCanvas7" width="50" height="50">
+    </canvas>
+      <script>
+        var c = document.getElementById("myCanvas7");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("B", 10, 50);
+      </script></div>
   </div>
   <p>TIP: You can use the keys on the bottom-left of your keyboard!</p>
   <footer>Copyright &copy; 2020-2021 The Noah</footer>
