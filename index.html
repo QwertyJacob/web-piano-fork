@@ -9,40 +9,26 @@
   <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <title>Web Piano</title>
-  <script src="webaudioapis.js" defer></script>
+  <title> My first Web Piano</title>
 </head>
 <body>
-  <h1>Web Piano Version 3.0</h1>
+  <h1> My second Piano!</h1>
   <div class="piano">
-    <div onclick="noteOn(freqs[0])" class="key white"></div>
-    <div  onclick="noteOn(freqs[1])" class="key black"></div>
-    <div data-note="D" class="key white"></div>
-    <div data-note="Eb" class="key black"></div>
-    <div data-note="E" class="key white"></div>
-    <div data-note="F" class="key white"></div>
-    <div data-note="Gb" class="key black"></div>
-    <div data-note="G" class="key white"></div>
-    <div data-note="Ab" class="key black"></div>
-    <div data-note="A" class="key white"></div>
-    <div data-note="Bb" class="key black"></div>
-    <div data-note="B" class="key white"></div>
-    <div data-note="Ca" class="key white"></div>
+    <div onclick="noteOn(hardcoded_frequencies[0])" class="key white"></div>
+    <div  onclick="noteOn(hardcoded_frequencies[1])" class="key black"></div>
+    <div onclick="noteOn(hardcoded_frequencies[2])" class="key white"></div>
+    <div onclick="noteOn(hardcoded_frequencies[3])" class="key black"></div>
+    <div onclick="noteOn(hardcoded_frequencies[4])" class="key white"></div>
+    <div onclick="noteOn(hardcoded_frequencies[5])" class="key white"></div>
+    <div onclick="noteOn(hardcoded_frequencies[6])" class="key black"></div>
+    <div onclick="noteOn(hardcoded_frequencies[7])" class="key white"></div>
+    <div onclick="noteOn(hardcoded_frequencies[8])" class="key black"></div>
+    <div onclick="noteOn(hardcoded_frequencies[9])" class="key white"></div>
+    <div onclick="noteOn(hardcoded_frequencies[10])" class="key black"></div>
+    <div onclick="noteOn(hardcoded_frequencies[11])" class="key white"></div>
   </div>
-  <p>TIP: You can use the keys on the bottom-left of your keyboard!</p>
+  <p>TIP: You cannot use the keys of your keyboard yet!</p>
   <footer>Copyright &copy; 2020-2021 The Noah</footer>
-  <audio id="C" src="notes/Piano_Samples/C3.mp3"></audio>
-  <audio id="Db" src="notes/Piano_Samples/C%233.mp3"></audio>
-  <audio id="D" src="notes/Piano_Samples/D3.mp3"></audio>
-  <audio id="Eb" src="notes/Piano_Samples/D%233.mp3"></audio>
-  <audio id="E" src="notes/Piano_Samples/E3.mp3"></audio>
-  <audio id="F" src="notes/Piano_Samples/F3.mp3"></audio>
-  <audio id="Gb" src="notes/Piano_Samples/F%233.mp3"></audio>
-  <audio id="G" src="notes/Piano_Samples/G3.mp3"></audio>
-  <audio id="Ab" src="notes/Piano_Samples/G%233.mp3"></audio>
-  <audio id="A" src="notes/Piano_Samples/A3.mp3"></audio>
-  <audio id="Bb" src="notes/Piano_Samples/A%233.mp3"></audio>
-  <audio id="B" src="notes/Piano_Samples/B3.mp3"></audio>
-  <audio id="Ca" src="notes/Piano_Samples/C4.mp3"></audio>
+  <script src="webaudioapis.js" defer></script>
 </body>
 </html>
