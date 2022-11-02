@@ -44,13 +44,10 @@ jobs:
           ruby-version: 3 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
 
-      - name: print dir
-        run: ls
-
 
       - name: Build site
-        run: cd .\docs\ |
-          bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        working-directory: ./docs/
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
 
