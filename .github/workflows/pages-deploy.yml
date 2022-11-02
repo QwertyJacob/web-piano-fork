@@ -44,6 +44,8 @@ jobs:
           ruby-version: 3 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
 
+      - name: Install jekyll
+        run: bundle install jekyll
 
       - name: Build site
         working-directory: ./docs/
