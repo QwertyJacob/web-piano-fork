@@ -44,11 +44,8 @@ jobs:
           ruby-version: 3 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
           bundler-cache: true
 
-      - name: install bundler
-        run: gem install bundler
-
       - name: Build site
-        run: cd docs |
+        run: cd .\docs\ |
           bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
