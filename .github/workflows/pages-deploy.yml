@@ -51,7 +51,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: "./docs/_site${{ steps.pages.outputs.base_path }}"
+          path: "./docs/_site"
 
   deploy_on_github_pages:
     environment:
