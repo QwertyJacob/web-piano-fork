@@ -28,7 +28,7 @@ concurrency:
 
 jobs:
 
-  bundle_jekyll_website:
+  bundle_jekyll_site:
     runs-on: ubuntu-latest
 
     steps:
@@ -58,7 +58,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    needs: bundle_jekyll_website
+    needs: bundle_jekyll_site
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
