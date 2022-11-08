@@ -1,6 +1,7 @@
 name: "GitHub action for deploying my jekyll site on GHPages"
 
 on:
+  # Runs on pushes targeting the basic_jekyll_only_webstorm branch
   push:
     branches:
       - basic_jekyll_only_webstorm
@@ -9,7 +10,10 @@ on:
       - README.md
       - LICENSE
 
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
@@ -36,7 +40,7 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v2
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
