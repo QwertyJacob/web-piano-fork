@@ -42,18 +42,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v2
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3 # reads from a '.ruby-version' or '.tools-version' file if 'ruby-version' is omitted
-          bundler-cache: true
-          working-directory: ./docs/
-
       - name: Build site
-        working-directory: ./docs/
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: "production"
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./docs/
+          destination: ./docs/_site
+
 
       - name: Test site
         working-directory: ./docs/
