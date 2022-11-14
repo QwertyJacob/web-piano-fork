@@ -1,0 +1,21 @@
+# WEB PIANO FORK
+## LETTERS DOCUMENTATION
+First we created a vector 'key_labels' with all the labels of the piano keys in frequency rising order
+
+```
+let key_labels = ['C1', 'Db1', 'D1', 'Eb1', 'E1', 'F1', 'Gb1', 'G1', 'Ab1', 'A1', 'Bb1', 'B1', 'C2', 'Db2', 'D2', 'Eb2', 'E2', 'F2', 'Gb2', 'G2', 'Ab2', 'A2', 'Bb2', 'B2']
+```
+
+For each key the team added a canvas in HTML
+
+Later, with the execution of the code, each label was printed on the relative key
+
+```
+for (let i = 0; i < hardcoded_frequencies.length; i++) {
+    current_id = key_labels[i]+'_label'
+    current_canvas = document.getElementById(current_id)
+    current_key_context = cuxrrent_canvas.getContext("2d");
+    current_key_context.font = "30px Arial";
+    current_key_context.strokeText(key_labels[i],10,50)
+}
+```
